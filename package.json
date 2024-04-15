@@ -1,0 +1,30 @@
+{
+  "name": "mussel-scrollbar",
+  "version": "1.0.0",
+  "description": "Customizable scrollbar component that replaces the default scrollbar in modern browsers",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "throttle-debounce": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheap-pets/mussel-scrollbar.git"
+  },
+  "keywords": [
+    "scrollbar",
+    "mussel"
+  ],
+  "author": "Scrollbar.W",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheap-pets/mussel-scrollbar/issues"
+  },
+  "homepage": "https://github.com/cheap-pets/mussel-scrollbar#readme"
+}
