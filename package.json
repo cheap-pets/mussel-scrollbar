@@ -21,6 +21,11 @@
     "scrollbar",
     "mussel"
   ],
+  "config": {
+    "cz-customizable": {
+      "config": ".cz-config.cjs"
+    }
+  },
   "author": "Scrollbar.W",
   "license": "MIT",
   "bugs": {
