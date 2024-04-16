@@ -1,6 +1,6 @@
 {
   "name": "mussel-scrollbar",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Customizable scrollbar component that replaces the default scrollbar in modern browsers",
   "type": "module",
   "main": "src/index.js",

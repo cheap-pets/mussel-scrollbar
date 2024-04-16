@@ -1,4 +1,4 @@
-.mu-scrollbar {
+:root {
   --mu-scrollbar_width: 6px;
   --mu-scrollbar_margin: 3px;
   --mu-scrollbar_min-length: 32px;
@@ -7,7 +7,9 @@
   --mu-scrollbar_active-color: rgba(0, 0, 0, .45);
   --mu-scrollbar_background: rgba(0, 0, 0, 0);
   --mu-scrollbar_box-shadow: none;
+}
 
+.mu-scrollbar {
   scrollbar-width: none;
   position: relative;
   overflow: auto;
