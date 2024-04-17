@@ -126,7 +126,7 @@ export function attach (el) {
   createMutationObserver()
 
   window.requestAnimationFrame(() => {
-    ctx.ready = true
+    ctx.ready ??= true
     updatePosition(true)
   })
 }
