@@ -110,6 +110,11 @@ export function attach (el) {
 
     const { tracks, trackX, trackY } = ctx.elements
 
+    if (ctx.hideTracksTimer) {
+      clearTimeout(ctx.hideTracksTimer)
+      ctx.hideTracksTimer = null
+    }
+
     if (ctx.existedTracks) {
       trackX.remove()
       trackY.remove()
