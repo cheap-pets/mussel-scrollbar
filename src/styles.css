@@ -21,21 +21,28 @@
 
 .mu-scrollbar_tracks {
   user-select: none;
+
   position: sticky;
   z-index: 10;
   top: 0;
   left: 0;
+
   overflow: visible;
+
   width: 0;
   height: 0;
+
   opacity: 0;
+
   transition: opacity 0.5s ease-in-out;
 }
 
 .mu-scrollbar_track-x,
 .mu-scrollbar_track-y {
   position: absolute;
+
   overflow: hidden;
+
   background: var(--mu-scrollbar_background);
   border-radius: var(--mu-scrollbar_border-radius);
   box-shadow: var(--mu-scrollbar_box-shadow);
