@@ -1,12 +1,11 @@
-:root {
+.mu-scrollbar {
   --mu-scrollbar_width: 6px;
   --mu-scrollbar_margin: 3px;
-  --mu-scrollbar_min-length: 32px;
+  --mu-scrollbar_min-size: 32px;
   --mu-scrollbar_border-radius: 3px;
-  --mu-scrollbar_color: rgba(0, 0, 0, .25);
-  --mu-scrollbar_active-color: rgba(0, 0, 0, .45);
-  --mu-scrollbar_background: rgba(0, 0, 0, 0);
-  --mu-scrollbar_box-shadow: none;
+  --mu-scrollbar_track-color: rgba(0, 0, 0, 0);
+  --mu-scrollbar_thumb-color: rgba(0, 0, 0, .25);
+  --mu-scrollbar_thumb-active-color: rgba(0, 0, 0, .45);
 }
 
 .mu-scrollbar {
@@ -22,7 +21,7 @@
 .mu-scrollbar_tracks {
   user-select: none;
 
-  position: sticky;
+  position: sticky !important;
   z-index: 10;
   top: 0;
   left: 0;
@@ -40,25 +39,23 @@
 .mu-scrollbar_track-x,
 .mu-scrollbar_track-y {
   position: absolute;
-
   overflow: hidden;
-
-  background: var(--mu-scrollbar_background);
+  background: var(--mu-scrollbar_track-color);
   border-radius: var(--mu-scrollbar_border-radius);
-  box-shadow: var(--mu-scrollbar_box-shadow);
 }
 
 .mu-scrollbar_track-x > .mu-scrollbar_thumb,
 .mu-scrollbar_track-y > .mu-scrollbar_thumb {
   position: absolute;
-  background: var(--mu-scrollbar_color);
+  background: var(--mu-scrollbar_thumb-color);
   border-radius: var(--mu-scrollbar_border-radius);
 }
 
-.mu-scrollbar_track-x:active > .mu-scrollbar_thumb, .mu-scrollbar_track-x > .mu-scrollbar_thumb:hover,
+.mu-scrollbar_track-x:active > .mu-scrollbar_thumb,
 .mu-scrollbar_track-y:active > .mu-scrollbar_thumb,
+.mu-scrollbar_track-x > .mu-scrollbar_thumb:hover,
 .mu-scrollbar_track-y > .mu-scrollbar_thumb:hover {
-  background: var(--mu-scrollbar_active-color);
+  background: var(--mu-scrollbar_thumb-active-color);
 }
 
 .mu-scrollbar_track-x {
@@ -66,7 +63,7 @@
 }
 
 .mu-scrollbar_track-x > .mu-scrollbar_thumb {
-  min-width: var(--mu-scrollbar_min-length);
+  min-width: var(--mu-scrollbar_min-size);
   height: 100%;
 }
 
@@ -76,7 +73,7 @@
 
 .mu-scrollbar_track-y > .mu-scrollbar_thumb{
   width: 100%;
-  min-height: var(--mu-scrollbar_min-length);
+  min-height: var(--mu-scrollbar_min-size);
 }
 
 .mu-scrollbar:hover > .mu-scrollbar_tracks,
