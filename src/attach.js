@@ -6,6 +6,8 @@ import { onTrackXMouseDown, onTrackYMouseDown } from './track-mouse-events'
 import { updateTracks, updateThumbX, updateThumbY } from './update-positions'
 
 export function attach (el) {
+  if (el[SYMBOL]) return
+
   const ctx = el[SYMBOL] = {}
 
   function isScrollSizeChanged () {
